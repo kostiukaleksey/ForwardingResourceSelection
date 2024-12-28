@@ -1,0 +1,220 @@
+* {
+    margin: 0;
+    padding: 0;
+}
+
+body {
+    background-color: black;
+    background-size: cover;
+}
+
+.Telegram, .Instagram, .VK, .Discord {
+    display: block;
+    background-color: rgb(46, 14, 76);
+    width: 200px;
+    height: 200px;
+    float: left;
+    z-index: 0;
+    opacity: 0;
+}
+
+@import url('https://fonts.googleapis.com/css2?family=Playwrite+AR+Guides&family=Playwrite+TZ+Guides&display=swap');
+
+#share {
+    background-color: white;
+    width: 100px;
+    height: 100px;
+    float: left;
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    border: 5px double black;
+    border-radius: 50%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    font-family: "Playwrite AR Guides", cursive;
+    font-size: 2.3em;
+    z-index: 1;
+}
+
+#share:hover{
+    background-color: gray;
+    border: 3px double rgb(255, 0, 238);
+    cursor: pointer;
+    
+}
+
+#share:hover .Telegram {
+    opacity: 0.85;
+    transition: opacity 1s ease;
+}
+
+#share:hover .Instagram {
+    opacity: 0.85;
+    transition: opacity 1s ease;
+}
+
+#share:hover .VK {
+    opacity: 0.85;
+    transition: opacity 1s ease;
+}
+
+#share:hover .Discord {
+    opacity: 0.85;
+    transition: opacity 1s ease;
+}
+
+.Telegram {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-101%, -101%);
+    border-radius: 50% 5% 5% 5%; 
+    border: 10px double black;
+    background-image: url('https://cdn-icons-png.freepik.com/512/4423/4423663.png');
+    background-position: center;
+    background-size: 150px;
+    background-repeat: no-repeat;
+    overflow: hidden;
+}
+
+.Telegram:hover {
+    background-color: rgb(156, 85, 222);
+    width: 220px;
+    height: 220px;
+    cursor: pointer;
+    border: 10px double gold;
+}
+
+.Telegram:hover:before {
+    position: absolute;
+    content: '';
+    top: 0;
+    left: 0;
+    height: 100%;
+    width: 40px;
+    z-index: 1;
+    background: rgb(255, 255, 255, 0.6);
+    transform: translateX(-60px) skew(-45deg);
+    animation: move 1s 0.1s infinite;
+    filter: blur(10px);
+}
+
+@keyframes move {
+    0% {
+        left: 0%;
+    }
+    100% {
+        left: 150%;
+    }
+}
+
+.Instagram {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(1%, -101%);
+    border-radius: 5% 50% 5% 5%; 
+    border: 10px double black;
+    background-image: url('https://cdn-icons-png.flaticon.com/512/174/174855.png');
+    background-position: center;
+    background-size: 150px;
+    background-repeat: no-repeat;
+    overflow: hidden;
+}
+
+.Instagram:hover {
+    background-color: rgb(156, 85, 222);
+    width: 220px;
+    height: 220px;
+    cursor: pointer;
+    border: 10px double gold;
+}
+
+.Instagram:hover:before {
+    position: absolute;
+    content: '';
+    top: 0;
+    left: 0;
+    height: 100%;
+    width: 40px;
+    z-index: 1;
+    background: rgb(255, 255, 255, 0.6);
+    transform: translateX(-60px) skew(-45deg);
+    animation: move 1s 0.1s infinite;
+    filter: blur(10px);
+}
+
+.VK {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-101%, 1%);
+    border-radius: 5% 5% 5% 50%; 
+    border: 10px double black;
+    background-image: url('https://cdn.iconscout.com/icon/free/png-256/free-vk-logo-icon-download-in-svg-png-gif-file-formats--media-social-pack-logos-icons-3649965.png');
+    background-position: center;
+    background-size: 150px;
+    background-repeat: no-repeat;
+    overflow: hidden;
+}
+
+.VK:hover {
+    background-color: rgb(156, 85, 222);
+    width: 220px;
+    height: 220px;
+    cursor: pointer;
+    border: 10px double gold;
+}
+
+.VK:hover:before {
+    position: absolute;
+    content: '';
+    top: 0;
+    left: 0;
+    height: 100%;
+    width: 40px;
+    z-index: 1;
+    background: rgb(255, 255, 255, 0.6);
+    transform: translateX(-60px) skew(-45deg);
+    animation: move 1s 0.1s infinite;
+    filter: blur(10px);
+}
+
+.Discord {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(1%, 1%);
+    border-radius: 5% 5% 50% 5%; 
+    border: 10px double black;
+    background-image: url('https://media.lordicon.com/icons/wired/gradient/2566-logo-discord.svg');
+    background-position: center;
+    background-size: 150px;
+    background-repeat: no-repeat;
+    overflow: hidden;
+}
+
+.Discord:hover {
+    background-color: rgb(156, 85, 222);
+    width: 220px;
+    height: 220px;
+    cursor: pointer;
+    border: 10px double gold;
+}
+
+.Discord:hover::before {
+    position: absolute;
+    content: '';
+    top: 0;
+    left: 0;
+    height: 100%;
+    width: 40px;
+    z-index: 1;
+    background: rgb(255, 255, 255, 0.6);
+    transform: translateX(-60px) skew(-45deg);
+    animation: move 1s 0.1s infinite;
+    filter: blur(10px);
+}
